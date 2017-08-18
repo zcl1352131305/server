@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/server.iml" filepath="$PROJECT_DIR$/server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/server-common/server-common.iml" filepath="$PROJECT_DIR$/server-common/server-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/server-file/server-file.iml" filepath="$PROJECT_DIR$/server-file/server-file.iml" />
+      <module fileurl="file://$PROJECT_DIR$/server-file/server-file-api/server-file-api.iml" filepath="$PROJECT_DIR$/server-file/server-file-api/server-file-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/server-file/server-file-mapper/server-file-mapper.iml" filepath="$PROJECT_DIR$/server-file/server-file-mapper/server-file-mapper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/server-file/server-file-model/server-file-model.iml" filepath="$PROJECT_DIR$/server-file/server-file-model/server-file-model.iml" />
+      <module fileurl="file://$PROJECT_DIR$/server-file/server-file-service/server-file-service.iml" filepath="$PROJECT_DIR$/server-file/server-file-service/server-file-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/server-rest/server-rest.iml" filepath="$PROJECT_DIR$/server-rest/server-rest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/server-system/server-system.iml" filepath="$PROJECT_DIR$/server-system/server-system.iml" />
+      <module fileurl="file://$PROJECT_DIR$/server-system/server-system-api/server-system-api.iml" filepath="$PROJECT_DIR$/server-system/server-system-api/server-system-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/server-system/server-system-auth/server-system-auth.iml" filepath="$PROJECT_DIR$/server-system/server-system-auth/server-system-auth.iml" />
+      <module fileurl="file://$PROJECT_DIR$/server-system/server-system-mapper/server-system-mapper.iml" filepath="$PROJECT_DIR$/server-system/server-system-mapper/server-system-mapper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/server-system/server-system-model/server-system-model.iml" filepath="$PROJECT_DIR$/server-system/server-system-model/server-system-model.iml" />
+      <module fileurl="file://$PROJECT_DIR$/server-system/server-system-service/server-system-service.iml" filepath="$PROJECT_DIR$/server-system/server-system-service/server-system-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/server-system/server-system-sso/server-system-sso.iml" filepath="$PROJECT_DIR$/server-system/server-system-sso/server-system-sso.iml" />
+    </modules>
+  </component>
+</project>

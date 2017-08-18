@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="server-common" />
+        <module name="server-file-api" />
+        <module name="server-file-mapper" />
+        <module name="server-file-model" />
+        <module name="server-file-service" />
+        <module name="server-rest" />
+        <module name="server-system-api" />
+        <module name="server-system-auth" />
+        <module name="server-system-mapper" />
+        <module name="server-system-model" />
+        <module name="server-system-service" />
+        <module name="server-system-sso" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="server" target="1.8" />
+      <module name="server-common" target="1.8" />
+      <module name="server-file" target="1.8" />
+      <module name="server-file-api" target="1.8" />
+      <module name="server-file-mapper" target="1.8" />
+      <module name="server-file-model" target="1.8" />
+      <module name="server-file-service" target="1.8" />
+      <module name="server-rest" target="1.7" />
+      <module name="server-system" target="1.8" />
+      <module name="server-system-api" target="1.8" />
+      <module name="server-system-auth" target="1.8" />
+      <module name="server-system-mapper" target="1.8" />
+      <module name="server-system-model" target="1.8" />
+      <module name="server-system-service" target="1.8" />
+      <module name="server-system-sso" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zoucl.server.dao.sys.SysDictionaryMapper" >
+
+    <sql id="Base_Column_List" >
+        t1.id as id, 
+		t1.name as name,
+		t1.val as val,
+		t1.note as note,
+		t1.is_open as isOpen,
+		t1.type as type,
+
+        t1.date_created as dateCreated, 
+        t1.create_id as createId, 
+        t1.create_ip as createIp, 
+        t1.date_updated as dateUpdated, 
+        t1.update_id as updateId, 
+        t1.update_ip as updateIp, 
+        t1.version as version,
+        t1.del_flag as delFlag
+    </sql>
+
+    <select id="selectByPrimaryKey" resultType="com.zoucl.server.model.sys.SysDictionary" parameterType="java.lang.String" >
+        select 
+        <include refid="Base_Column_List" />
+        from t_sys_dictionary t1
+        where t1.id = #{id}
+    </select>
+
+    <select id="selectList" resultType="com.zoucl.server.model.sys.SysDictionary" parameterType="com.zoucl.server.model.sys.SysDictionary" >
+        select 
+        <include refid="Base_Column_List" />
+        from t_sys_dictionary t1
+        where t1.del_flag = '0'
+        <if test="type != null and type != ''">and t1.type = #{type}</if>
+        <if test="isOpen != null and isOpen != ''">and t1.is_open = #{isOpen}</if>
+    </select>
+
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
+        delete from t_sys_dictionary
+        where id = #{id}
+    </delete>
+
+    <insert id="insert" parameterType="com.zoucl.server.model.sys.SysDictionary" >
+        insert into t_sys_dictionary (
+            id,
+			name,
+			val,
+			note,
+			is_open,
+			type,
+
+            date_created, 
+            create_id, 
+            create_ip, 
+            date_updated, 
+            update_id, 
+            update_ip, 
+            version,
+            del_flag
+            )
+        values (
+            #{id},
+			#{name},
+			#{val},
+			#{note},
+			#{isOpen},
+			#{type},
+
+            now(), 
+            #{createId}, 
+            #{createIp}, 
+            now(), 
+            #{updateId}, 
+            #{updateIp}, 
+            0,
+            0
+            )
+    </insert>
+
+    <update id="updateByPrimaryKeySelective" parameterType="com.zoucl.server.model.sys.SysDictionary" >
+        update t_sys_dictionary set 
+		<if test="name != null" >
+			name = #{name},
+		</if>
+		<if test="val != null" >
+			val = #{val},
+		</if>
+		<if test="note != null" >
+			note = #{note},
+		</if>
+		<if test="isOpen != null" >
+			is_open = #{isOpen},
+		</if>
+		<if test="type != null" >
+			type = #{type},
+		</if>
+
+        <if test="updateId != null" >
+            update_id = #{updateId},
+        </if>
+        <if test="updateIp != null" >
+            update_ip = #{updateIp},
+        </if>
+        <if test="delFlag != null" >
+            del_flag = #{delFlag},
+        </if>
+        version = version + 1,
+        date_updated = now()
+        where id = #{id}
+    </update>
+</mapper>

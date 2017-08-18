@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/server-common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/server-file" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/server-file/server-file-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/server-file/server-file-mapper" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/server-file/server-file-model" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/server-file/server-file-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/server-rest" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/server-system" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/server-system/server-system-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/server-system/server-system-auth" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/server-system/server-system-mapper" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/server-system/server-system-model" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/server-system/server-system-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/server-system/server-system-sso" charset="UTF-8" />
+  </component>
+</project>
